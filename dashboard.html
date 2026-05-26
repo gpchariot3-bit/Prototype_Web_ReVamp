@@ -1,0 +1,459 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - ResearchGate</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+  </head>
+  <body>
+    <div id="site-nav"></div>
+
+    <main class="dashboard-main">
+      <div class="dashboard-container">
+        <!-- Left Sidebar Navigation -->
+        <aside class="dashboard-sidebar">
+          <nav class="sidebar-nav">
+            <div class="nav-section">
+              <h3 class="nav-title">NGHIÊN CỨU</h3>
+              <ul class="nav-links">
+                <li><a href="#" class="nav-link active">🔍 Tìm kiếm nghiên cứu</a></li>
+                <li><a href="#" class="nav-link">📋 Khám phá chủ đề</a></li>
+                <li><a href="#" class="nav-link">📊 Dự án của tôi</a></li>
+                <li><a href="#" class="nav-link">📚 Đã lưu</a></li>
+              </ul>
+            </div>
+            <div class="nav-section">
+              <h3 class="nav-title">CÔNG CỤ AI</h3>
+              <ul class="nav-links">
+                <li><a href="pages/AIs/" class="nav-link">📝 Trích dẫn APA</a></li>
+                <li><a href="pages/AIs/" class="nav-link">✓ Check đạo văn</a></li>
+                <li><a href="pages/AIs/" class="nav-link">💬 Hỏi AI nghiên cứu</a></li>
+                <li><a href="pages/AIs/" class="nav-link">📄 Tạo outline</a></li>
+              </ul>
+            </div>
+            <div class="nav-section">
+              <h3 class="nav-title">CỘNG ĐỒNG</h3>
+              <ul class="nav-links">
+                <li><a href="pages/forum/forum.html" class="nav-link">💬 Thảo luận</a></li>
+                <li><a href="pages/chat/connects.html" class="nav-link">👥 Mentor</a></li>
+                <li><a href="#" class="nav-link">⭐ Lịch sự hoạt động</a></li>
+                <li><a href="#" class="nav-link">⚙️ Cài đặt</a></li>
+              </ul>
+            </div>
+            <div class="nav-section premium-section">
+              <h3 class="nav-title">💎 NÂNG CẤP PREMIUM</h3>
+              <p class="nav-subtitle">Mở khóa công cụ AI nâng cao và nhiều đặc quyền khác.</p>
+              <button class="btn btn-primary w-100">Nâng cấp ngay →</button>
+            </div>
+          </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <section class="dashboard-main-content">
+          <!-- Hero Section -->
+          <section class="hero-section">
+            <canvas id="donut-canvas" aria-hidden="true"></canvas>
+            <div class="hero-content">
+              <span class="hero-label">🔬 ResearchGate 2.0 • AI-Powered Platform</span>
+              <h1 class="hero-title">Khám phá nghiên cứu của khoa học<br>và nâng cao hiệu quả nghiên cứu</h1>
+              
+              <div class="hero-tags">
+                <span class="tag">SEM</span>
+                <span class="tag">PLS-SEM</span>
+                <span class="tag">AI trong giáo dục</span>
+                <span class="tag">Hành vi người tiêu dùng</span>
+                <span class="tag">Sustainable marketing</span>
+                <span class="tag">...</span>
+              </div>
+
+              <form class="search-bar" role="search" action="#" method="get">
+                <span class="search-bar-icon" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8" />
+                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                  </svg>
+                </span>
+                <input type="search" name="q" placeholder="Tìm kiếm nhà nghiên cứu, bài báo, chủ đề..." aria-label="Search" />
+                <button type="submit" class="btn btn-primary">Search</button>
+              </form>
+            </div>
+          </section>
+
+          <!-- Topics of Interest Section -->
+          <section class="topics-section">
+            <div class="section-header">
+              <h2 class="section-title">Topics of Interest</h2>
+              <a href="#" class="view-all-link">Xem tất cả →</a>
+            </div>
+            <div class="topics-grid">
+              <div class="topic-card ai-topic">
+                <div class="topic-icon">🤖</div>
+                <h3>AI</h3>
+                <p class="topic-count">1,248 papers</p>
+                <p class="topic-trend">↑ 12.5% vs last week</p>
+              </div>
+              <div class="topic-card marketing-topic">
+                <div class="topic-icon">📊</div>
+                <h3>Marketing</h3>
+                <p class="topic-count">842 papers</p>
+                <p class="topic-trend">↑ 8.3% vs last week</p>
+              </div>
+              <div class="topic-card education-topic">
+                <div class="topic-icon">🎓</div>
+                <h3>Education</h3>
+                <p class="topic-count">623 papers</p>
+                <p class="topic-trend">↓ 4.1% vs last week</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Recommended Papers Section -->
+          <section class="papers-section">
+            <div class="section-header">
+              <h2 class="section-title">Tài liệu nổi bật dành cho bạn</h2>
+              <a href="#" class="view-all-link">Xem tất cả →</a>
+            </div>
+            <div class="papers-list">
+              <article class="paper-card">
+                <div class="paper-thumbnail">📄</div>
+                <div class="paper-content">
+                  <h3 class="paper-title">The impact of digital transformation on organizational performance: A systematic review</h3>
+                  <p class="paper-authors">Vial, G. • Journal of Business Research • 2021</p>
+                  <p class="paper-desc">This study explores methodological diversity and adaptive marketing strategies to sustain brand value amid a changing environment...</p>
+                  <div class="paper-meta">
+                    <span class="paper-badge">Q1</span>
+                    <span class="paper-badge-group">
+                      <span class="paper-tag">Management Information Systems</span>
+                      <span class="paper-tag">SJR 2023</span>
+                    </span>
+                    <span class="paper-verified">✓ Peer-Reviewed</span>
+                  </div>
+                </div>
+                <div class="paper-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">2,341</span>
+                    <span class="stat-label">Citations (Scopus)</span>
+                  </div>
+                </div>
+                <button class="paper-save" aria-label="Save paper">🔖</button>
+              </article>
+
+              <article class="paper-card">
+                <div class="paper-thumbnail">📄</div>
+                <div class="paper-content">
+                  <h3 class="paper-title">Sustainable marketing metrics that matter: A comprehensive review</h3>
+                  <p class="paper-authors">Sharma, R., et al. • Journal of Marketing • 2023</p>
+                  <p class="paper-desc">The study identifies sustainability metrics that significantly impact brand perception and consumer engagement...</p>
+                  <div class="paper-meta">
+                    <span class="paper-badge">Q1</span>
+                    <span class="paper-badge-group">
+                      <span class="paper-tag">Marketing</span>
+                      <span class="paper-tag">SJR 2023</span>
+                    </span>
+                    <span class="paper-verified">✓ Peer-Reviewed</span>
+                  </div>
+                </div>
+                <div class="paper-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">1,847</span>
+                    <span class="stat-label">Citations (Scopus)</span>
+                  </div>
+                </div>
+                <button class="paper-save" aria-label="Save paper">🔖</button>
+              </article>
+
+              <article class="paper-card">
+                <div class="paper-thumbnail">📄</div>
+                <div class="paper-content">
+                  <h3 class="paper-title">Digital transformation in business: A review of the literature</h3>
+                  <p class="paper-authors">Nguyen, P. • Business Horizons • 2023</p>
+                  <p class="paper-desc">Digital transformation reshaping business models across industries, with comprehensive review of literature...</p>
+                  <div class="paper-meta">
+                    <span class="paper-badge">Q1</span>
+                    <span class="paper-badge-group">
+                      <span class="paper-tag">Business</span>
+                      <span class="paper-tag">SJR 2023</span>
+                    </span>
+                    <span class="paper-verified">✓ Peer-Reviewed</span>
+                  </div>
+                </div>
+                <div class="paper-stats">
+                  <div class="stat-item">
+                    <span class="stat-number">3,421</span>
+                    <span class="stat-label">Citations (Scopus)</span>
+                  </div>
+                </div>
+                <button class="paper-save" aria-label="Save paper">🔖</button>
+              </article>
+            </div>
+          </section>
+        </section>
+
+        <!-- Right Sidebar -->
+        <aside class="dashboard-right-sidebar">
+          <!-- Trending Discussions -->
+          <div class="sidebar-panel trending-panel">
+            <div class="panel-header">
+              <h3 class="panel-title">Thảo luận nổi bật</h3>
+              <a href="pages/forum/forum.html" class="view-all-link">Xem tất cả →</a>
+            </div>
+            <div id="trendingDiscussions" class="discussion-list">
+              <!-- Dynamically populated from Forum -->
+            </div>
+          </div>
+
+          <!-- Active Polls -->
+          <div class="sidebar-panel polls-panel">
+            <div class="panel-header">
+              <h3 class="panel-title">Khảo sát đang diễn ra</h3>
+              <a href="pages/forum/forum.html" class="view-all-link">Xem tất cả →</a>
+            </div>
+            <div id="activePolls" class="polls-list">
+              <!-- Dynamically populated from Forum -->
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <canvas id="ascii-bg-canvas" aria-hidden="true"></canvas>
+    </main>
+
+    <div id="site-footer"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/nav.js"></script>
+
+    <script>
+    // ── Shared: theme color helper ─────────────────────────────────────────
+    function getThemeRGB() {
+      var theme = localStorage.getItem('theme') || 'light';
+      var map = {
+        light:      [58,  108, 244],
+        dark:       [91,  133, 246],
+        gruvbox:    [215, 153, 33],
+        sage:       [93,  138, 94],
+        nord:       [136, 192, 208],
+        tokyo:      [122, 162, 247],
+        claude:     [217, 119, 87],
+        tide:       [79,  195, 200],
+        catppuccin: [203, 166, 247],
+        'caffeine-white': [17,  17,  17],
+        'caffeine-black': [226, 226, 226],
+      };
+      return map[theme] || map.light;
+    }
+
+    // ── ASCII Donut background ─────────────────────────────────────────────
+    (function () {
+      var canvas = document.getElementById('donut-canvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+
+      var A = 0, B = 0;
+      var CHAR_W = 8, CHAR_H = 13;
+
+      function resize() {
+        var hero = canvas.parentElement;
+        canvas.width  = hero.offsetWidth;
+        canvas.height = hero.offsetHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      var CHARS = ' .,;-+*=#@$';
+
+      function frame() {
+        var W = canvas.width, H = canvas.height;
+        ctx.clearRect(0, 0, W, H);
+
+        var rgb = getThemeRGB();
+        ctx.fillStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',0.15)';
+        ctx.font = 'bold ' + (CHAR_W + 2) + 'px monospace';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+
+        var cols = Math.floor(W / CHAR_W);
+        var rows = Math.floor(H / CHAR_H);
+        var output = new Array(cols * rows).fill(' ');
+        var zbuf   = new Array(cols * rows).fill(0);
+
+        var sinA = Math.sin(A), cosA = Math.cos(A);
+        var sinB = Math.sin(B), cosB = Math.cos(B);
+        var K = Math.min(W, H) * 0.72;
+
+        for (var theta = 0; theta < 6.28; theta += 0.05) {
+          var sinT = Math.sin(theta), cosT = Math.cos(theta);
+          for (var phi = 0; phi < 6.28; phi += 0.015) {
+            var sinP = Math.sin(phi), cosP = Math.cos(phi);
+            var h  = cosT + 2.5;
+            var D  = 1 / (sinP * h * sinA + sinT * cosA + 5);
+            var t  = sinP * h * cosA - sinT * sinA;
+            var xPx = cols / 2 + (K / CHAR_W) * D * (cosP * h * cosB - t * sinB);
+            var yPx = rows / 2 + (K / CHAR_H) * D * (cosP * h * sinB + t * cosB);
+            var x = Math.floor(xPx), y = Math.floor(yPx);
+            var o = x + cols * y;
+            var L = Math.floor(8 * ((sinT * sinA - sinP * cosT * cosA) * cosB -
+                          sinP * cosT * sinA - sinT * cosA - cosP * cosT * sinB));
+            if (y > 0 && y < rows && x > 0 && x < cols && D > zbuf[o]) {
+              zbuf[o] = D;
+              var idx = Math.max(0, Math.min(L, CHARS.length - 1));
+              output[o] = CHARS[idx] || '.';
+            }
+          }
+        }
+
+        for (var r = 0; r < rows; r++) {
+          for (var c = 0; c < cols; c++) {
+            var ch = output[c + cols * r];
+            if (ch && ch !== ' ') ctx.fillText(ch, c * CHAR_W, r * CHAR_H);
+          }
+        }
+
+        A += 0.009;
+        B += 0.004;
+        requestAnimationFrame(frame);
+      }
+      frame();
+    })();
+
+    // ── ASCII Background Wave ────────────────────────────────────────────────
+    (function () {
+      var canvas = document.getElementById('ascii-bg-canvas');
+      if (!canvas) return;
+      var ctx = canvas.getContext('2d');
+
+      var ASCII_CHARS = ' @B%8&MNHW#*+i;:.,_░▒';
+      var CELL = 14;
+
+      var mouseX = -9999, mouseY = -9999;
+      var t = 0;
+
+      function resize() {
+        var parent = canvas.parentElement;
+        canvas.width  = parent ? parent.offsetWidth  : window.innerWidth;
+        canvas.height = parent ? parent.offsetHeight : window.innerHeight;
+      }
+
+      function noiseVal(col, row, time) {
+        var gx = col * 0.18, gy = row * 0.28;
+        var twist = 0.12 * Math.sin(gy * 0.5 + time * 0.25);
+        return (
+          Math.sin(gx * 0.55 + gy * 0.10 + time * 0.85 + twist) * 0.42 +
+          Math.sin(gx * 0.11 - gy * 0.38 - time * 0.52)          * 0.28 +
+          Math.sin((gx + gy) * 0.32 + time * 0.63)                * 0.18 +
+          Math.sin(gx * 0.78 - time * 0.38 + gy * 0.08)           * 0.12
+        );
+      }
+
+      function frame() {
+        var W = canvas.width, H = canvas.height;
+        ctx.clearRect(0, 0, W, H);
+
+        var rgb = getThemeRGB();
+        var cols = Math.floor(W / CELL);
+        var rows = Math.floor(H / CELL);
+
+        ctx.font      = (CELL - 1) + 'px monospace';
+        ctx.textAlign = 'left';
+        ctx.textBaseline = 'top';
+
+        for (var row = 0; row < rows; row++) {
+          var vertFade = Math.pow(row / rows, 1.4);
+          if (vertFade < 0.01) continue;
+
+          for (var col = 0; col < cols; col++) {
+            var px = col * CELL;
+            var py = row * CELL;
+
+            var dx = px - mouseX, dy = py - mouseY;
+            var distSq = dx * dx + dy * dy;
+            var mouseRipple = Math.exp(-distSq / 70000) * 0.35;
+
+            var n = noiseVal(col, row, t) + mouseRipple;
+
+            var charIdx = Math.floor(((n + 1) / 2.45) * (ASCII_CHARS.length - 1));
+            charIdx = Math.max(0, Math.min(ASCII_CHARS.length - 1, charIdx));
+            var ch = ASCII_CHARS[charIdx];
+            if (ch === ' ') continue;
+
+            var density = charIdx / (ASCII_CHARS.length - 1);
+            var alpha = vertFade * (0.08 + density * 0.45);
+
+            ctx.fillStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha.toFixed(3) + ')';
+            ctx.fillText(ch, px, py);
+          }
+        }
+
+        t += 0.022;
+        requestAnimationFrame(frame);
+      }
+
+      requestAnimationFrame(function() {
+        resize();
+        window.addEventListener('resize', function() { resize(); });
+        document.addEventListener('mousemove', function(e) {
+          var rect = canvas.getBoundingClientRect();
+          mouseX = e.clientX - rect.left;
+          mouseY = e.clientY - rect.top;
+        });
+        document.addEventListener('mouseleave', function() { mouseX = -9999; mouseY = -9999; });
+        frame();
+      });
+    })();
+
+    // ── Load trending discussions and polls from Forum ──────────────────────
+    (function() {
+      // This would typically fetch from the forum data via API
+      // For now, placeholders are shown
+      var trendingHTML = `
+        <div class="discussion-item">
+          <div class="discussion-author">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=researcher1" alt="Author" class="author-avatar">
+            <div class="author-info">
+              <h4>How does AI impact academic integrity in higher education?</h4>
+              <p class="author-details">Dr. Michael Lee • 2h ago</p>
+            </div>
+          </div>
+          <span class="discussion-comments">💬 23</span>
+        </div>
+        <div class="discussion-item">
+          <div class="discussion-author">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=researcher2" alt="Author" class="author-avatar">
+            <div class="author-info">
+              <h4>Sustainable marketing metrics that actually matter</h4>
+              <p class="author-details">Sarah Johnson • 4h ago</p>
+            </div>
+          </div>
+          <span class="discussion-comments">💬 17</span>
+        </div>
+        <div class="discussion-item">
+          <div class="discussion-author">
+            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=researcher3" alt="Author" class="author-avatar">
+            <div class="author-info">
+              <h4>Open access vs. subscription journals: What's the future?</h4>
+              <p class="author-details">Prof. James Wilson • 6h ago</p>
+            </div>
+          </div>
+          <span class="discussion-comments">💬 31</span>
+        </div>
+      `;
+      document.getElementById('trendingDiscussions').innerHTML = trendingHTML;
+
+      var pollsHTML = `
+        <div class="poll-item">
+          <h4 class="poll-title">AI in Academic Research 2024</h4>
+          <p class="poll-meta">1,245 người tham gia</p>
+        </div>
+        <div class="poll-item">
+          <h4 class="poll-title">Best tools for systematic literature review in 2024</h4>
+          <p class="poll-meta">892 người đã bình chọn</p>
+        </div>
+      `;
+      document.getElementById('activePolls').innerHTML = pollsHTML;
+    })();
+    </script>
+  </body>
+</html>

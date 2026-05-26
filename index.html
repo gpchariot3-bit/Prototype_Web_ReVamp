@@ -3,220 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Protocol - AI-Powered Research Platform</title>
+    <title>Protocol</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <div id="site-nav"></div>
 
-    <main class="home-main">
-      <!-- Hero Section with Sidebar -->
-      <div class="home-container">
-        <!-- Left Sidebar Navigation -->
-        <aside class="home-sidebar">
-          <nav class="sidebar-nav">
-            <div class="nav-section">
-              <h3 class="nav-title">Research</h3>
-              <ul class="nav-links">
-                <li><a href="#" class="nav-link active">🔍 Search Research</a></li>
-                <li><a href="#" class="nav-link">📋 Browse by Topic</a></li>
-                <li><a href="#" class="nav-link">⭐ Trending Papers</a></li>
-              </ul>
-            </div>
-            <div class="nav-section">
-              <h3 class="nav-title">Tools & Features</h3>
-              <ul class="nav-links">
-                <li><a href="pages/doc/documents.html" class="nav-link">📄 Documents</a></li>
-                <li><a href="pages/forum/forum.html" class="nav-link">💬 Forum</a></li>
-                <li><a href="pages/chat/connects.html" class="nav-link">🤝 Connections</a></li>
-                <li><a href="pages/AIs/" class="nav-link">⚡ AI Tools</a></li>
-              </ul>
-            </div>
-            <div class="nav-section">
-              <h3 class="nav-title">My Activity</h3>
-              <ul class="nav-links">
-                <li><a href="#" class="nav-link">📚 My Research</a></li>
-                <li><a href="#" class="nav-link">💾 Saved Items</a></li>
-                <li><a href="#" class="nav-link">👥 Following</a></li>
-              </ul>
-            </div>
-          </nav>
-        </aside>
+    <main>
+      <section class="hero" aria-label="Search section">
+        <canvas id="donut-canvas" aria-hidden="true"></canvas>
+        <span class="hero-label">Rau má &bull; Rau muống &bull; Rau dền</span>
 
-        <!-- Main Content Area -->
-        <section class="home-main-content">
-          <!-- Search Hero -->
-          <section class="hero" aria-label="Search and featured content">
-            <canvas id="donut-canvas" aria-hidden="true"></canvas>
-            
-            <div class="hero-content">
-              <span class="hero-label">🔬 Protocol v2.0 • AI-Powered Research</span>
-              <h1 class="hero-title">Explore & Collaborate<br>on Research</h1>
-              <p class="hero-subtitle">Connect with researchers, access papers, and accelerate your discoveries</p>
+        <h1 class="hero-title">
+          Research Gate<br /> - RC 1.2 -
+        </h1>
 
-              <form class="search-bar" role="search" action="#" method="get">
-                <span class="search-bar-icon" aria-hidden="true">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <circle cx="11" cy="11" r="8" />
-                    <line x1="21" y1="21" x2="16.65" y2="16.65" />
-                  </svg>
-                </span>
-                <input type="search" name="q" placeholder="Search papers, researchers, topics..." aria-label="Search" />
-                <button type="submit" class="btn btn-primary">Search</button>
-              </form>
-            </div>
-          </section>
+        <p class="hero-subtitle">All of your knowledge, in one place</p>
 
-          <!-- Featured Section -->
-          <section class="featured-box" aria-label="Featured research topics">
-            <h2 class="featured-title">Popular Research Topics</h2>
-            <div class="featured-tags">
-              <span class="tag">SEM</span>
-              <span class="tag">PLS-SEM</span>
-              <span class="tag">AI in Education</span>
-              <span class="tag">User Behavior</span>
-              <span class="tag">Sustainable Marketing</span>
-            </div>
-          </section>
+        <form class="search-bar" role="search" action="#" method="get">
+          <span class="search-bar-icon" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </span>
 
-          <!-- Topics of Interest -->
-          <section class="topics-section" aria-label="Topics of interest">
-            <div class="topics-header">
-              <h2 class="topics-title">Topics of Interest</h2>
-              <a href="#" class="view-all-link">View all →</a>
-            </div>
-            <div class="topics-grid">
-              <div class="topic-card ai-topic">
-                <div class="topic-icon">🤖</div>
-                <h3>Artificial Intelligence</h3>
-                <p class="topic-count">12,485 papers</p>
-                <p class="topic-trend">↑ 12.5% vs last week</p>
-              </div>
-              <div class="topic-card marketing-topic">
-                <div class="topic-icon">📊</div>
-                <h3>Marketing</h3>
-                <p class="topic-count">8,427 papers</p>
-                <p class="topic-trend">↑ 8.3% vs last week</p>
-              </div>
-              <div class="topic-card education-topic">
-                <div class="topic-icon">🎓</div>
-                <h3>Education</h3>
-                <p class="topic-count">6,239 papers</p>
-                <p class="topic-trend">↓ 4.1% vs last week</p>
-              </div>
-            </div>
-          </section>
+          <input
+            type="search"
+            name="q"
+            placeholder="Yu, Sansan..."
+            aria-label="Search"
+          />
 
-          <!-- Recommended Papers -->
-          <section class="papers-section" aria-label="Recommended research papers">
-            <div class="papers-header">
-              <h2 class="papers-title">Recommended For You</h2>
-              <a href="#" class="view-all-link">View all →</a>
-            </div>
-            <div class="papers-list">
-              <article class="paper-card">
-                <div class="paper-thumbnail">📄</div>
-                <div class="paper-content">
-                  <h3 class="paper-title">The impact of digital transformation on organizational performance: A systematic review</h3>
-                  <p class="paper-authors">Vial, G. • Journal of Business Research • 2021</p>
-                  <p class="paper-desc">This study explores methodological diversity and adaptive marketing strategies to sustain brand value amid a changing environment...</p>
-                  <div class="paper-meta">
-                    <span class="paper-badge">Q1</span>
-                    <span class="paper-citations">2,341 Citations</span>
-                    <span class="paper-verified">✓ Peer-Reviewed</span>
-                  </div>
-                </div>
-                <button class="paper-save" aria-label="Save paper">🔖</button>
-              </article>
+          <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+      </section>
 
-              <article class="paper-card">
-                <div class="paper-thumbnail">📄</div>
-                <div class="paper-content">
-                  <h3 class="paper-title">Sustainable marketing metrics that matter: A comprehensive review</h3>
-                  <p class="paper-authors">Sharma, R., et al. • Journal of Marketing • 2023</p>
-                  <p class="paper-desc">The study identifies sustainability metrics that significantly impact brand perception and consumer engagement...</p>
-                  <div class="paper-meta">
-                    <span class="paper-badge">Q1</span>
-                    <span class="paper-citations">1,847 Citations</span>
-                    <span class="paper-verified">✓ Peer-Reviewed</span>
-                  </div>
-                </div>
-                <button class="paper-save" aria-label="Save paper">🔖</button>
-              </article>
+      <section class="features" aria-label="Main features">
+        <p class="features-title">Test 1 2 3 alo</p>
 
-              <article class="paper-card">
-                <div class="paper-thumbnail">📄</div>
-                <div class="paper-content">
-                  <h3 class="paper-title">Digital transformation in business: A review of the literature</h3>
-                  <p class="paper-authors">Nguyen, P. • Business Horizons • 2023</p>
-                  <p class="paper-desc">Digital transformation reshaping business models across industries, with comprehensive review of literature and future directions...</p>
-                  <div class="paper-meta">
-                    <span class="paper-badge">Q1</span>
-                    <span class="paper-citations">3,421 Citations</span>
-                    <span class="paper-verified">✓ Peer-Reviewed</span>
-                  </div>
-                </div>
-                <button class="paper-save" aria-label="Save paper">🔖</button>
-              </article>
-            </div>
-          </section>
-        </section>
+        <div class="features-grid">
+          <a
+            href="pages/doc/documents.html"
+            class="card"
+            aria-label="Go to Documents"
+          >
+            <canvas class="card-ascii-canvas" data-card="doc"></canvas>
+            <div class="card-icon" aria-hidden="true">:3</div>
+            <div class="card-title">Documents</div>
+            <p class="card-desc">Xem tải và phân tích các tài liệu or sum</p>
+            <span class="card-arrow">Rau má 20k gần đường tàu &rarr;</span>
+          </a>
 
-        <!-- Right Sidebar -->
-        <aside class="home-right-sidebar">
-          <!-- Notifications -->
-          <div class="sidebar-panel trending-panel">
-            <div class="panel-header">
-              <h3 class="panel-title">Top Researchers</h3>
-              <a href="#" class="view-all-link">View all →</a>
-            </div>
-            <div class="researcher-list">
-              <div class="researcher-item">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=researcher1" alt="Researcher" class="researcher-avatar">
-                <div class="researcher-info">
-                  <h4 class="researcher-name">Dr. Michael Lee</h4>
-                  <p class="researcher-field">AI & Education • 2h ago</p>
-                </div>
-              </div>
-              <div class="researcher-item">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=researcher2" alt="Researcher" class="researcher-avatar">
-                <div class="researcher-info">
-                  <h4 class="researcher-name">Sarah Johnson</h4>
-                  <p class="researcher-field">Marketing • 4h ago</p>
-                </div>
-              </div>
-              <div class="researcher-item">
-                <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=researcher3" alt="Researcher" class="researcher-avatar">
-                <div class="researcher-info">
-                  <h4 class="researcher-name">Prof. James Wilson</h4>
-                  <p class="researcher-field">Business • 6h ago</p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <a
+            href="pages/forum/forum.html"
+            class="card"
+            aria-label="Go to Forum"
+          >
+            <canvas class="card-ascii-canvas" data-card="forum"></canvas>
+            <div class="card-icon" aria-hidden="true">:3</div>
+            <div class="card-title">Forum</div>
+            <p class="card-desc">Thảo luận, hỏi đáp và chia sẻ kiến thức yay</p>
+            <span class="card-arrow">36 thanh hóa &rarr;</span>
+          </a>
 
-          <!-- Featured Events -->
-          <div class="sidebar-panel events-panel">
-            <div class="panel-header">
-              <h3 class="panel-title">Upcoming Events</h3>
-              <a href="#" class="view-all-link">View all →</a>
-            </div>
-            <div class="event-list">
-              <div class="event-item">
-                <div class="event-date">May 2024</div>
-                <h4 class="event-title">AI in Academic Research 2024</h4>
-                <p class="event-attendees">1,245 participants</p>
-              </div>
-              <div class="event-item">
-                <div class="event-date">Jun 2024</div>
-                <h4 class="event-title">Digital Transformation Summit</h4>
-                <p class="event-attendees">892 registered</p>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
+          <a
+            href="pages/chat/connects.html"
+            class="card"
+            aria-label="Go to Connects"
+          >
+            <canvas class="card-ascii-canvas" data-card="chat"></canvas>
+            <div class="card-icon" aria-hidden="true">:3</div>
+            <div class="card-title">Connects</div>
+            <p class="card-desc">
+              Kết nối với bạn bè, mentors hoặc researchers (add more text so it
+              looks filler)
+            </p>
+            <span class="card-arrow">Kết nối ngay hay cái gì đấy &rarr;</span>
+          </a>
+
+          <a href="pages/AIs/" class="card" aria-label="AI Tools">
+            <canvas class="card-ascii-canvas" data-card="ai"></canvas>
+            <div class="card-icon" aria-hidden="true">:3</div>
+            <div class="card-title">AI Tools</div>
+            <p class="card-desc">Công cụ AI hỗ trợ nghiên cứu — kiểm tra đạo văn, tóm tắt, trích dẫn</p>
+            <span class="card-arrow">Dùng ngay &rarr;</span>
+          </a>
+        </div>
+      </section>
 
       <canvas id="ascii-bg-canvas" aria-hidden="true"></canvas>
     </main>
@@ -271,7 +155,7 @@
         ctx.clearRect(0, 0, W, H);
 
         var rgb = getThemeRGB();
-        ctx.fillStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',0.15)';
+        ctx.fillStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',0.26)';
         ctx.font = 'bold ' + (CHAR_W + 2) + 'px monospace';
         ctx.textAlign = 'left';
         ctx.textBaseline = 'top';
@@ -320,14 +204,139 @@
       frame();
     })();
 
-    // ── ASCII Background Wave ────────────────────────────────────────────────
+    // ── Card hover ASCII animations ────────────────────────────────────────
+    (function () {
+      var cards = document.querySelectorAll('.card-ascii-canvas');
+
+      function fillStyle(alpha) {
+        var rgb = getThemeRGB();
+        return 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha + ')';
+      }
+
+      // Doc card: characters being typed left-to-right top-to-bottom
+      function animateDoc(ctx, w, h, progress) {
+        ctx.clearRect(0, 0, w, h);
+        ctx.fillStyle = fillStyle(0.22);
+        ctx.font = '11px monospace';
+        var charset = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:?!-_';
+        var cw = 9, ch = 14;
+        var cols = Math.floor(w / cw), rows = Math.floor(h / ch);
+        var total = cols * rows;
+        var filled = Math.floor(total * Math.min(progress, 1));
+        for (var i = 0; i < filled; i++) {
+          var col = i % cols, row = Math.floor(i / cols);
+          ctx.fillText(charset[(i * 7 + Math.floor(progress * 100)) % charset.length], col * cw + 2, row * ch + ch);
+        }
+      }
+
+      // Forum card: post text then comments appearing
+      var forumLines = [
+        ['> New Post: "Best method to stay happy?"', 1.0],
+        ['  \u21b3 user1: Great question!', 0.75],
+        ['  \u21b3 user2: KYS!', 0.75],
+        ['  \u21b3 user3: +1 to that approach!', 0.75],
+        ['> Another Post: "Hey Siri"', 1.0],
+        ['  \u21b3 mentor1: Phat no', 0.75],
+      ];
+      function animateForum(ctx, w, h, progress) {
+        ctx.clearRect(0, 0, w, h);
+        ctx.font = '10px monospace';
+        var lineH = 16;
+        var linesVisible = Math.floor(progress * forumLines.length);
+        forumLines.slice(0, linesVisible).forEach(function(pair, i) {
+          var text = pair[0], alpha = pair[1] * 0.22;
+          ctx.fillStyle = fillStyle(alpha);
+          ctx.globalAlpha = 1;
+          ctx.fillText(text, 6, 20 + i * lineH);
+        });
+      }
+
+      // Chat card: alternating L/R messages
+      function animateChat(ctx, w, h, progress) {
+        ctx.clearRect(0, 0, w, h);
+        ctx.font = '10px monospace';
+        var msgs = [
+          [true,  'Mày ngu'],
+          [false, '?'],
+          [true,  'Ngu'],
+          [false, 'Địt mẹ mày!'],
+          [true,  'Ngu'],
+          [false, 'Ngu'],
+        ];
+        var visible = Math.min(Math.floor(progress * msgs.length) + 1, msgs.length);
+        msgs.slice(0, visible).forEach(function(pair, i) {
+          var isLeft = pair[0], text = pair[1];
+          ctx.fillStyle = fillStyle(0.22);
+          var prefix = isLeft ? '<< ' : '>> ';
+          var full = prefix + text;
+          var x = isLeft ? 6 : w - ctx.measureText(full).width - 6;
+          ctx.fillText(full, x, 18 + i * 15);
+        });
+      }
+
+      // AI card: matrix-style falling chars
+      function animateAI(ctx, w, h, time) {
+        ctx.clearRect(0, 0, w, h);
+        ctx.font = '11px monospace';
+        var cols = Math.floor(w / 10);
+        var chars = '01\u30A2\u30A4\u30A6\u30A8\u30AA#%$';
+        for (var c = 0; c < cols; c++) {
+          var offset = (c * 3 + Math.floor(time / 80)) % Math.floor(h / 13);
+          for (var r = 0; r < 3; r++) {
+            var ch = chars[(c + r + Math.floor(time / 120)) % chars.length];
+            ctx.fillStyle = fillStyle((1 - r * 0.3) * 0.22);
+            ctx.fillText(ch, c * 10, (offset + r) * 13 + 13);
+          }
+        }
+      }
+
+      cards.forEach(function (canvas) {
+        var card = canvas.closest('.card');
+        var type = canvas.dataset.card;
+        var animFrame = null;
+        var progress = 0;
+        var startTime = null;
+        var DURATION = 1200;
+
+        function resize() {
+          canvas.width  = card.offsetWidth;
+          canvas.height = card.offsetHeight;
+        }
+
+        function animate(ts) {
+          if (!startTime) startTime = ts;
+          var elapsed = ts - startTime;
+          progress = Math.min(elapsed / DURATION, 1);
+          var ctx = canvas.getContext('2d');
+          resize();
+          if (type === 'doc')   animateDoc(ctx,   canvas.width, canvas.height, progress);
+          if (type === 'forum') animateForum(ctx,  canvas.width, canvas.height, progress);
+          if (type === 'chat')  animateChat(ctx,   canvas.width, canvas.height, progress);
+          if (type === 'ai')    animateAI(ctx,     canvas.width, canvas.height, elapsed);
+          if (type === 'ai' || progress < 1) animFrame = requestAnimationFrame(animate);
+        }
+
+        card.addEventListener('mouseenter', function () {
+          startTime = null; progress = 0;
+          if (animFrame) cancelAnimationFrame(animFrame);
+          animFrame = requestAnimationFrame(animate);
+        });
+        card.addEventListener('mouseleave', function () {
+          if (animFrame) cancelAnimationFrame(animFrame);
+          canvas.getContext('2d').clearRect(0, 0, canvas.width, canvas.height);
+        });
+      });
+    })();
+
+    // ── ASCII Background Wave (ReactBits-style) ────────────────────────────
     (function () {
       var canvas = document.getElementById('ascii-bg-canvas');
       if (!canvas) return;
       var ctx = canvas.getContext('2d');
 
+      // Characters sorted by visual density (space = empty, # = dense)
       var ASCII_CHARS = ' @B%8&MNHW#*+i;:.,_░▒';
-      var CELL = 14;
+      var CELL = 14; // px per character cell
 
       var mouseX = -9999, mouseY = -9999;
       var t = 0;
@@ -338,15 +347,17 @@
         canvas.height = parent ? parent.offsetHeight : window.innerHeight;
       }
 
+      // 2D noise approximation via overlapping sines — produces flowing wave patterns
       function noiseVal(col, row, time) {
         var gx = col * 0.18, gy = row * 0.28;
+        // Wave tension & twist (matching ReactBits defaults)
         var twist = 0.12 * Math.sin(gy * 0.5 + time * 0.25);
         return (
           Math.sin(gx * 0.55 + gy * 0.10 + time * 0.85 + twist) * 0.42 +
           Math.sin(gx * 0.11 - gy * 0.38 - time * 0.52)          * 0.28 +
           Math.sin((gx + gy) * 0.32 + time * 0.63)                * 0.18 +
           Math.sin(gx * 0.78 - time * 0.38 + gy * 0.08)           * 0.12
-        );
+        ); // range ≈ -1 … +1
       }
 
       function frame() {
@@ -362,6 +373,8 @@
         ctx.textBaseline = 'top';
 
         for (var row = 0; row < rows; row++) {
+          // Vertical fade: 0 at top (hero area), 1 at bottom
+          // Use a steeper power so the top 40% stays nearly invisible
           var vertFade = Math.pow(row / rows, 1.4);
           if (vertFade < 0.01) continue;
 
@@ -369,19 +382,22 @@
             var px = col * CELL;
             var py = row * CELL;
 
+            // Mouse ripple: boost noise near cursor
             var dx = px - mouseX, dy = py - mouseY;
             var distSq = dx * dx + dy * dy;
-            var mouseRipple = Math.exp(-distSq / 70000) * 0.35;
+            var mouseRipple = Math.exp(-distSq / 70000) * 0.45;
 
-            var n = noiseVal(col, row, t) + mouseRipple;
+            var n = noiseVal(col, row, t) + mouseRipple; // ≈ -1 … +1.45
 
+            // Map noise to character index
             var charIdx = Math.floor(((n + 1) / 2.45) * (ASCII_CHARS.length - 1));
             charIdx = Math.max(0, Math.min(ASCII_CHARS.length - 1, charIdx));
             var ch = ASCII_CHARS[charIdx];
             if (ch === ' ') continue;
 
+            // Alpha: vertical fade × character density
             var density = charIdx / (ASCII_CHARS.length - 1);
-            var alpha = vertFade * (0.08 + density * 0.45);
+            var alpha = vertFade * (0.10 + density * 0.55);
 
             ctx.fillStyle = 'rgba(' + rgb[0] + ',' + rgb[1] + ',' + rgb[2] + ',' + alpha.toFixed(3) + ')';
             ctx.fillText(ch, px, py);
@@ -392,6 +408,7 @@
         requestAnimationFrame(frame);
       }
 
+      // Allow one rAF for layout to settle before first render
       requestAnimationFrame(function() {
         resize();
         window.addEventListener('resize', function() { resize(); });
